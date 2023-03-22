@@ -1,0 +1,55 @@
+.profile {
+  border: 1px solid #ccc;
+
+  .user-cont {
+    display: grid;
+    grid-template-columns: 266px 2.3fr 0.7fr;
+    align-items: center;
+    gap: 10px;
+
+    .img-cont {
+      max-width: 266px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .info {
+      padding: 6px 12px 10px;
+
+      strong {
+        display: block;
+      }
+
+      p:nth-child(4) {
+        padding-top: 25px;
+      }
+    }
+
+    .address {
+      padding: 6px 12px 10px;
+    }
+  }
+
+  .friends {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .profile {
+    border: 1px solid #ccc;
+
+    .user-cont {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 10px;
+
+      .img-cont {
+        max-width: 100%;
+      }
+    }
+  }
+}
